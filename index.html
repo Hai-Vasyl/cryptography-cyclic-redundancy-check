@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Lab2</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="crc-wrapper">
+    <div class="input-form section">
+      <p>
+        <label for="n">n:</label>
+        <input type="text" name="n" required class="input" id="n">
+      </p>
+      <p>
+        <label for="k">k:</label>
+        <input type="text" name="k" required class="input" id="k">
+      </p>
+      <p>
+        <label for="polinom">Polinom:</label>
+        <input type="text" name="polinom" required class="input" id="polinom">
+      </p>
+    </div>
+    <div class="input-message section">
+      <label for="message">Message:</label>
+      <input type="text" placeholder="Input message..." name="message" required id="message" class="message-input">
+    </div>
+    <div class="encode-section section">
+      <h2>ENCODING</h2>
+
+      <div class="encode-wrapper">
+        <div class="item" id="add-bits"></div>
+        <div class="item" id="k-str"></div>
+        <div class="item" id="k-message"></div>
+        <div class="item" id="main-2d-arr"></div>
+      </div>
+
+      <div class="encode-message">Encode message:</div>
+      <input type="text" class="encode-message input" id="encode-message">
+      <button type="button" name="button" class="btn-encode btn" onclick="Encode()">ENCODE</button>
+    </div>
+    <div class="decode-section section">
+      <h2>DECODING</h2>
+
+      <div class="decode-wrapper">
+        <div class="item" id="add-bits-decode"></div>
+        <div class="item" id="k-str-decode"></div>
+        <div class="item" id="k-message-decode"></div>
+        <div class="item" id="main-2d-arr-decode"></div>
+      </div>
+
+      <div class="iscorrect-message" id="iscorrect-message"></div>
+      <div class="output-message" id="output-message">Message:<br></div>
+      <button type="button" name="button" class="btn-decode btn" onclick="Decode()" id="decoceBtn" disabled>DECODE</button>
+    </div>
+  </div>
+
+  <script src="script.js" charset="utf-8"></script>
+</body>
+</html>
